@@ -1206,6 +1206,11 @@ svg{
     justify-content: center;
 }
 
+.card-section.preview #footer-link .powered-by-message-box,
+#CardPreview #footer-link .powered-by-message-box {
+    justify-content: center;
+}
+
 .website-section{
     padding: 20px 0;
     border-top: 0.5px solid rgba(112, 112, 112, 0.3);
@@ -1220,19 +1225,34 @@ svg{
     padding: 25px 0;
     border-top: 0.5px solid rgba(112, 112, 112, 0.3);
 }
-.footer-section a{
+.message-box{
+    width: 100%;
     display: flex;
-    cursor: pointer;
-    justify-content: center;
-    height: 47px;
 }
 
-.footer-section img{
+.powered-by-message-box{
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 32px;
+}
+
+.footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.powered-by-link{
+    height: 26px;
+}
+
+.footer-link img,
+.powered-by-logo{
     width: auto;
     height: 100%;
-}
-.footer-section a:nth-child(2){
-    justify-content: flex-end;
+    max-height: 26px;
+    display: block;
 }
 svg{
     width: 100%;
@@ -1340,13 +1360,6 @@ footer {
     transition: opacity 0.3s ease;
 }
 
-.footer-section img{
-    width: auto;
-    height: 100%;
-}
-.footer-section a:nth-child(2){
-    justify-content: flex-end;
-}
 svg{
     width: 100%;
 }
@@ -1659,8 +1672,8 @@ svg{
     /* .card-section:not(.preview) .social-media-section {
         padding: 20px 0;
     } */
-    .card-section:not(.preview) .footer-section img{
-        width: 100%;
+    .card-section:not(.preview) .footer-section .powered-by-logo{
+        width: auto;
     }
     /* .bg-container { 
         min-height: 72px;
@@ -2041,11 +2054,8 @@ svg{
     .company-contact a{
         font-size: 18px;
     }
-    .footer-section a{
-        height: 35px;
-    }
-    .card-section.preview .footer-section a {
-        height: 25px;
+    .powered-by-link{
+        height: 26px;
     }
 
 }
