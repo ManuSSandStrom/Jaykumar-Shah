@@ -492,6 +492,7 @@ svg{
     min-height: 46px;
     word-break: normal;
     overflow-wrap: break-word;
+    white-space: pre-line;
 }
 .contact-section {
     display: flex;
