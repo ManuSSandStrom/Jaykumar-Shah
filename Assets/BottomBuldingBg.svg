@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2500" height="1500" viewBox="0 0 2500 1500">
+  <defs>
+    <clipPath id="clip-PageBg">
+      <rect width="2500" height="1500"/>
+    </clipPath>
+  </defs>
+  <g id="PageBg" clip-path="url(#clip-PageBg)">
+    <rect width="2500" height="1500" fill="#0b0700"/>
+  </g>
+</svg>

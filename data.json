@@ -1,0 +1,27 @@
+{
+    "assetBasePath": "./Assets",
+    "firstname" : "Jaykumar",
+    "lastname" : "Shah",
+    "role": "Gemologist (D.G)",
+    "profileSummary": "Certified Solitare \u2022 Studded Jewellery \u2022 Gem Stones Stockist of Loose Diamonds (EF VVS Quality)",
+    "profilePhoto": "Profile/Jaykumar.png",
+    "profileThumbnail": "Profile/ProfileThumbnail.png",
+    "vcardFile": "Profile/Jaykumar.vcf",
+    "pdfProfile": "KushalDiamondsProfile.pdf",
+    "companyName": "Kushal Diamonds",
+    "companyDescriptionHtml": "Wholesale Dealers in <b>Polish Diamonds</b> and <b>Custom Made Jewellery</b>",
+    "companyAddress": "Shop #18, 2nd Floor, Nathella Jubilee Plaza\nNSC Bose Road, Chennai, Tamil Nadu\nIndia - 600 079",
+    "country" :"+91",
+    "phone": "98400 98390",
+    "email" : "jayshah1976@gmail.com",
+    "whatsappNumber" : "919840098390",
+    "linkedin": "",
+    "website": "https://www.kushaldiamonds.in/",
+    "websiteLabel": "www.<b>kushaldiamonds</b>.in",
+    "socialLinks": {
+        "youtube": "https://www.kushaldiamonds.in/",
+        "facebook": "https://www.kushaldiamonds.in/",
+        "instagram": "https://www.kushaldiamonds.in/",
+        "linkedin": "https://www.kushaldiamonds.in/"
+    }
+}
