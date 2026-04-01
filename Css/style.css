@@ -492,7 +492,7 @@ svg{
     min-height: 46px;
     word-break: normal;
     overflow-wrap: break-word;
-    white-space: pre-line;
+    white-space: normal;
 }
 .contact-section {
     display: flex;
@@ -1464,7 +1464,7 @@ svg{
         line-height: 22px;
         margin: 0 auto;
         min-height: 46px;
-        white-space: pre-line;
+        white-space: normal;
     }
     .card-section .name-container {
         padding: 20px 10px;
@@ -1635,7 +1635,7 @@ svg{
         line-height: 22px;
         margin: 0 auto;
         min-height: 46px;
-        white-space: pre-line;
+        white-space: normal;
     }
     .card-section:not(.preview) .contact-section .left .icon,  .card-section:not(.preview) .contact-section .right .icon{
         width: 24px;
@@ -1901,7 +1901,7 @@ svg{
         line-height: 22px;
         margin: 0 auto;
         min-height: 46px;
-        white-space: pre-line;
+        white-space: normal;
     }
 
     .card-section.preview .card{
