@@ -6,9 +6,11 @@
     <meta name="description" content="Jaykumar Shah | Gemologist (D.G) at Kushal Diamonds.">
     <meta property="og:title" content="Jaykumar Shah | Kushal Diamonds">
     <meta property="og:description" content="Gemologist (D.G) at Kushal Diamonds. View contact details and profile.">
-    <meta property="og:image" content="/Assets/Profile/ProfilePreview1200.png">
-    <meta property="og:image:url" content="/Assets/Profile/ProfilePreview1200.png">
-    <meta property="og:image:secure_url" content="/Assets/Profile/ProfilePreview1200.png">
+    <meta property="og:site_name" content="Kushal Diamonds">
+    <meta property="og:url" id="og-url" content="./">
+    <meta property="og:image" id="og-image" content="./Assets/Profile/ProfilePreview1200.png">
+    <meta property="og:image:url" id="og-image-url" content="./Assets/Profile/ProfilePreview1200.png">
+    <meta property="og:image:secure_url" id="og-image-secure" content="./Assets/Profile/ProfilePreview1200.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -17,8 +19,11 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Jaykumar Shah | Kushal Diamonds">
     <meta name="twitter:description" content="Gemologist (D.G) at Kushal Diamonds. View contact details and profile.">
-    <meta name="twitter:image" content="/Assets/Profile/ProfilePreview1200.png">
+    <meta name="twitter:url" id="twitter-url" content="./">
+    <meta name="twitter:image" id="twitter-image" content="./Assets/Profile/ProfilePreview1200.png">
+    <meta name="twitter:image:src" id="twitter-image-src" content="./Assets/Profile/ProfilePreview1200.png">
     <meta name="twitter:image:alt" content="Jaykumar Shah profile preview">
+    <link rel="canonical" id="canonical-url" href="./">
     <meta name="msapplication-TileImage" content="./Assets/Profile/ProfileThumbnail.png">
     <title>Jaykumar Shah | Kushal Diamonds</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,6 +40,39 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shareon@2/dist/shareon.min.css">
     <script src="https://cdn.jsdelivr.net/npm/shareon@2/dist/shareon.iife.js" defer init></script>
+    <script>
+        (function () {
+            var urlObj = new URL(window.location.href.split("#")[0]);
+            if (urlObj.pathname.endsWith("/index.html")) {
+                urlObj.pathname = urlObj.pathname.slice(0, -"/index.html".length) || "/";
+            }
+
+            var pageUrl = urlObj.toString();
+            var basePath = urlObj.pathname.endsWith("/") ? urlObj.pathname : urlObj.pathname + "/";
+            var imageUrl = new URL("Assets/Profile/ProfilePreview1200.png", urlObj.origin + basePath).href;
+
+            var targets = {
+                "og-url": pageUrl,
+                "twitter-url": pageUrl,
+                "canonical-url": pageUrl,
+                "og-image": imageUrl,
+                "og-image-url": imageUrl,
+                "og-image-secure": imageUrl,
+                "twitter-image": imageUrl,
+                "twitter-image-src": imageUrl
+            };
+
+            Object.keys(targets).forEach(function (id) {
+                var node = document.getElementById(id);
+                if (!node) return;
+                if (node.tagName === "LINK") {
+                    node.setAttribute("href", targets[id]);
+                } else {
+                    node.setAttribute("content", targets[id]);
+                }
+            });
+        })();
+    </script>
     <script id="profile-data-fallback" type="application/json">
         {
             "assetBasePath": "./Assets",
