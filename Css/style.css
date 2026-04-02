@@ -1208,7 +1208,7 @@ svg{
 
 .card-section.preview #footer-link .powered-by-message-box,
 #CardPreview #footer-link .powered-by-message-box {
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .website-section{
@@ -1232,14 +1232,14 @@ svg{
 
 .powered-by-message-box{
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     min-height: 32px;
 }
 
 .footer-link{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     cursor: pointer;
 }
 
@@ -1455,7 +1455,7 @@ svg{
 }
 
 .card-section:not(.preview) .powered-by-link{
-    margin-left: 86.24px;
+    margin-left: 0;
 }
 
 
@@ -1540,7 +1540,7 @@ svg{
     }
 
     .card-section:not(.preview) .powered-by-link{
-        margin-left: clamp(48px, 19.6%, 86.24px);
+        margin-left: 0;
     }
 
     /* .card-section:not(.preview) .company-name {
