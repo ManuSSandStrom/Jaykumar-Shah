@@ -1197,7 +1197,8 @@ svg{
     text-decoration: none;
     font-family: 'Roboto';
     font-size: 24px;
-    word-break: break-all;
+    word-break: normal;
+    overflow-wrap: anywhere;
 }
 
 /* .branches-section{
@@ -1662,12 +1663,12 @@ svg{
     }
 
     .card-section:not(.preview) .card-body {
-        padding: 0 10px 0 10px;
+        padding: 0 16px 0 16px;
     }
 
     .company-address {
         padding: 0;
-        margin-bottom: 18px;
+        margin-bottom: 14px;
     }
 
     /* .card-section:not(.preview) .profile-imagemaincontainer{
@@ -1676,13 +1677,14 @@ svg{
         justify-content: flex-start;
     } */
     .card-section .company-name{
-        font-size: 22px;
-        margin-bottom: 11px;
-    }
-    .company-description{
         font-size: 20px;
         line-height: 24px;
-        margin-bottom: 11px;
+        margin-bottom: 10px;
+    }
+    .company-description{
+        font-size: 17px;
+        line-height: 21px;
+        margin-bottom: 8px;
     }
     .map-section{
         margin-bottom: 15px;
@@ -1721,7 +1723,7 @@ svg{
     .card-section:not(.preview) .company-contact{
         flex-direction: column;
         align-items: flex-start;
-        gap: 6px;
+        gap: 4px;
     }
 
     .card-section:not(.preview) .company-section{
@@ -1731,16 +1733,32 @@ svg{
     .card-section:not(.preview) .company-description,
     .card-section:not(.preview) .download-brochure-section,
     .card-section:not(.preview) .download-brochure-section a,
-    .card-section:not(.preview) .company-addressblock{
-        max-width: 424px;
+    .card-section:not(.preview) .company-addressblock,
+    .card-section:not(.preview) .website-section,
+    .card-section:not(.preview) .company-social-media-section{
+        max-width: none;
     }
 
     .card-section:not(.preview) .company-address,
     .card-section:not(.preview) .company-contact a,
     .card-section:not(.preview) .company-email .company_email,
     .card-section:not(.preview) .card_companywebsite a{
-        font-size: clamp(18px, 4.8vw, 20px);
-        line-height: 1.2;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .card-section:not(.preview) .website-section,
+    .card-section:not(.preview) .company-social-media-section{
+        padding: 16px 0;
+    }
+
+    .card-section:not(.preview) .download-brochure-section{
+        margin-bottom: 2px;
+    }
+
+    .card-section:not(.preview) .card_companywebsite a{
+        font-size: 17px;
+        line-height: 21px;
     }
 
     .branches-list {
@@ -2171,7 +2189,7 @@ svg{
     } */
 
     .card-section:not(.preview) .card-body {
-        padding: 0 8px 0 8px;
+        padding: 0 14px 0 14px;
     }
     .card-section.preview .card-body {
         padding: 0 15px 0 15px;
@@ -2247,10 +2265,18 @@ svg{
     /* .card-header {
         height: 200px;
     } */
-/* 
-    .company-address{
-        font-size: 18px;
-    } */
+    .card-section:not(.preview) .company-address,
+    .card-section:not(.preview) .company-contact a,
+    .card-section:not(.preview) .company-email .company_email,
+    .card-section:not(.preview) .card_companywebsite a{
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .card-section:not(.preview) .company-description{
+        font-size: 16px;
+        line-height: 20px;
+    }
 
     /* .company-contact a{
         font-size: 16px;
@@ -2566,7 +2592,49 @@ svg{
     }
 
     #CardPreview .card-body {
-        padding: 0 20px 0;
+        padding: 0 16px 0;
+    }
+
+    #CardPreview .company-name {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    #CardPreview .company-description {
+        font-size: 17px;
+        line-height: 21px;
+        margin-bottom: 8px;
+        max-width: none;
+    }
+
+    #CardPreview .download-brochure-section,
+    #CardPreview .download-brochure-section a,
+    #CardPreview .company-addressblock,
+    #CardPreview .website-section,
+    #CardPreview .company-social-media-section {
+        max-width: none;
+    }
+
+    #CardPreview .company-address,
+    #CardPreview .company-contact a,
+    #CardPreview .company-email .company_email {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    #CardPreview .company-contact {
+        gap: 4px;
+    }
+
+    #CardPreview .website-section,
+    #CardPreview .company-social-media-section {
+        padding: 16px 0;
+    }
+
+    #CardPreview .card_companywebsite a {
+        font-size: 17px;
+        line-height: 21px;
     }
 
     #CardPreview .name {
