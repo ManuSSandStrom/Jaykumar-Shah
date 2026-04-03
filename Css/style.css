@@ -1662,7 +1662,7 @@ svg{
     }
 
     .card-section:not(.preview) .card-body {
-        padding: 0 20px 0 20px;
+        padding: 0 10px 0 10px;
     }
 
     .company-address {
@@ -1722,6 +1722,25 @@ svg{
         flex-direction: column;
         align-items: flex-start;
         gap: 6px;
+    }
+
+    .card-section:not(.preview) .company-section{
+        max-width: none;
+    }
+
+    .card-section:not(.preview) .company-description,
+    .card-section:not(.preview) .download-brochure-section,
+    .card-section:not(.preview) .download-brochure-section a,
+    .card-section:not(.preview) .company-addressblock{
+        max-width: 424px;
+    }
+
+    .card-section:not(.preview) .company-address,
+    .card-section:not(.preview) .company-contact a,
+    .card-section:not(.preview) .company-email .company_email,
+    .card-section:not(.preview) .card_companywebsite a{
+        font-size: clamp(18px, 4.8vw, 20px);
+        line-height: 1.2;
     }
 
     .branches-list {
@@ -2152,7 +2171,7 @@ svg{
     } */
 
     .card-section:not(.preview) .card-body {
-        padding: 0 15px 0 15px;
+        padding: 0 8px 0 8px;
     }
     .card-section.preview .card-body {
         padding: 0 15px 0 15px;
