@@ -1044,7 +1044,7 @@ svg{
     margin-bottom: 12px;
 }
 .company-name{
-    color: #2B0460;
+    color: #051042;
     font-family: 'Roboto';
     font-size: 30px;
     line-height: 36px;
@@ -1060,7 +1060,7 @@ svg{
     align-items: flex-start;
 }
 .company-address{
-    color:  #2E1877;
+    color: #051042;
     font-family: 'Roboto';
     font-size: 18px;
     line-height: 22px;
@@ -1070,7 +1070,7 @@ svg{
     white-space: pre-line;
 }
 .company-description{
-    color: #2B0460;
+    color: #051042;
     font-family: 'Roboto';
     font-size: 20px;
     line-height: 24px;
@@ -1088,7 +1088,7 @@ svg{
 }
 .company-contact a{
     text-decoration: none;
-    color: #2E1877;
+    color: #051042;
     font-family: 'Roboto';
     font-size: 20px;
     line-height: 24px;
@@ -1113,12 +1113,12 @@ svg{
 .company-mobile{
     font-size: 18px;
     text-align: left;
-    color: #2E1877;
+    color: #051042;
 }
 
 .company-email .company_email{
     font-size: 20px;
-    color: #2E1877;
+    color: #051042;
     text-align: left;
 }
 
@@ -1170,7 +1170,7 @@ svg{
 .company-website{
     display: none;
     text-decoration: none;
-    color: #2E1877;
+    color: #051042;
     font-family: 'Roboto';
     font-size: 24px;
     cursor: pointer;
@@ -1185,7 +1185,7 @@ svg{
 
 
 .card_companywebsite a{
-    color: #2E1877;
+    color: #051042;
     text-align: left;
     text-decoration: none;
     font-family: 'Roboto';
