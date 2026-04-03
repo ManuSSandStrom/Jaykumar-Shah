@@ -844,6 +844,12 @@ svg{
     text-align: center;
 }
 
+.service-trust-block img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .service-trust-top{
     font-family: 'Roboto';
     font-size: 18px;
