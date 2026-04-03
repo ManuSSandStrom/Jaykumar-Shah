@@ -1082,7 +1082,7 @@ svg{
     line-height: 24px;
     font-weight: normal;
     padding: 0;
-    margin-bottom: 11px;
+    margin-bottom: 0;
     max-width: 385px;
     text-align: left;
 }
@@ -1136,7 +1136,7 @@ svg{
 .download-brochure-section a{
     display: block;
     width: 100%;
-    max-width: 438px;
+    max-width: 430px;
 }
 
 .download-brochure-section a.is-disabled{
@@ -1153,7 +1153,8 @@ svg{
 .download-brochure-section{
     width: 100%;
     display: block;
-    margin-bottom: 11px;
+    max-width: 430px;
+    margin-bottom: 0;
 }
 
 .download-brochure-section::after{
